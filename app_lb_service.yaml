@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: applb
+  labels:
+    app: employees
+spec:
+  type: LoadBalancer
+  ports:
+  - protocol: TCP
+    port: 30000
+    targetPort: 8080
+  selector:
+    app: employees
