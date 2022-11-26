@@ -25,7 +25,7 @@ spec:
         - name: DBPORT
           value: "3306"
         - name: DBHOST
-          value: "10.100.115.44"
+          value: "mysqldb"
         - name: APP_COLOR
           value: "blue"
       ports:
